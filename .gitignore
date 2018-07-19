@@ -1,0 +1,6 @@
+example
+build
+dist
+.eggs
+*.pyc
+.DS_Store
