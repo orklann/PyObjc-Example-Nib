@@ -50,9 +50,6 @@ class PyController(NSObject):
         Set up the UI once the NIB is initialised
         """
         self._setup_status_bar()
-        for i in dir(Cocoa):
-            print(i + "\t")
-
 
     @objc.IBAction
     def buttonClick_(self, sender):
@@ -61,6 +58,6 @@ class PyController(NSObject):
         """
         from datetime import datetime
         self.text_field.setStringValue_(datetime.now().strftime("%H:%M"))
-        
+
 if __name__ == "__main__":
     AppHelper.runEventLoop()
