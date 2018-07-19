@@ -13,6 +13,17 @@ I did this purely to teach myself how to use PyObjC; if anyone has comments or c
 Build Instructions
 ------------------
 
+To setup a enviroment for Python:
+
+* Install `virtualenv` with `pip`
+* Run:
+    ```python
+        virtualenv -p `which python3` example
+        source example/bin/activate.fish
+        pip install py2pp
+        pip install pyobjc
+    ```
+
 Simplest way is to run the build script in the project: ./compile_run.sh
 
 To manually build:
