@@ -62,6 +62,5 @@ class PyController(NSObject):
         from datetime import datetime
         self.text_field.setStringValue_(datetime.now().strftime("%H:%M"))
 
-
 if __name__ == "__main__":
     AppHelper.runEventLoop()
