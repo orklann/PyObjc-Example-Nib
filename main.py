@@ -1,4 +1,4 @@
-"""
+"
 Simple app to demonstrate integrating a NIB UI with Python using PyObjC.
 
 To build the demo program, run the following in the terminal:
@@ -43,7 +43,6 @@ class PyController(NSObject):
         self.status.setMenu_(self.status_menu)
         self.status.setTitle_("Core")
         self.status.setHighlightMode_(objc.YES)
-
 
     def awakeFromNib(self):
         """
