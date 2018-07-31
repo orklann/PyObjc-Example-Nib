@@ -1,4 +1,4 @@
-"
+"""
 Simple app to demonstrate integrating a NIB UI with Python using PyObjC.
 
 To build the demo program, run the following in the terminal:
@@ -16,6 +16,7 @@ from PyObjCTools import AppHelper
 from Foundation import *
 from AppKit import NSStatusBar, NSStatusItem, NSVariableStatusItemLength
 import Cocoa
+import os
 
 class PyController(NSObject):
     """
@@ -33,7 +34,6 @@ class PyController(NSObject):
     name = objc.IBOutlet()
     # The status menu
     status = None
-
 
     def _setup_status_bar(self):
         """
